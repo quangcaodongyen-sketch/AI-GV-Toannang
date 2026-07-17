@@ -311,7 +311,7 @@ const apps: AppCard[] = [
   },
   {
     id: 'tro-ly-ao-toan',
-    title: 'TRỢ LÝ ẢO TOÁN THẦY THANH',
+    title: 'TRỢ LÝ ẢO TOÁN THẦY THÀNH',
     description: 'Trợ lý AI chuyên biệt cho môn Toán, hỗ trợ giáo viên trong việc giảng dạy, giải bài tập và tạo tài liệu học tập hiệu quả.',
     image: '/z7354426534960_8c2a00859fd8a27ba80ef3b1ec55062b.jpg',
     url: 'https://trolyaothaythanh.vercel.app/',
@@ -360,8 +360,6 @@ function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState<string>('Tất cả');
   const [showSKKNModal, setShowSKKNModal] = useState(false);
-  const [showZaloModal, setShowZaloModal] = useState(false);
-  const [showGuideModal, setShowGuideModal] = useState(false);
   const [visitCount, setVisitCount] = useState<number>(19866);
 
   useEffect(() => {
@@ -428,12 +426,12 @@ function App() {
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center shadow-lg">
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center shadow-lg">
                 <School className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h1 className="text-base sm:text-lg font-bold text-gray-900">TRỢ LÝ AI DÀNH CHO GIÁO VIÊN</h1>
-                <p className="text-[10px] sm:text-xs text-gray-600 max-w-xs sm:max-w-md">Bộ công cụ AI cho Giáo viên phát triển bởi thầy Trần Hoài Thanh</p>
+                <h1 className="text-base sm:text-lg font-bold text-gray-900">AI-GV TOÀN NĂNG</h1>
+                <p className="text-[10px] sm:text-xs text-gray-600 max-w-xs sm:max-w-md">Bản quyền phát triển bởi Đinh Văn Thành - Tel/Zalo: 0915.213717</p>
               </div>
             </div>
 
@@ -445,9 +443,8 @@ function App() {
             </button>
 
             <div className="hidden lg:flex items-center gap-6">
-              <a href="#apps" className="text-gray-700 hover:text-teal-600 transition-colors">Ứng dụng</a>
-              <a href="#about" className="text-gray-700 hover:text-teal-600 transition-colors">Giới thiệu</a>
-              <a href="#contact" className="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors font-medium">
+              <a href="#apps" className="text-gray-700 hover:text-blue-700 transition-colors font-medium">Ứng dụng</a>
+              <a href="#contact" className="px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition-colors font-medium">
                 Liên hệ
               </a>
             </div>
@@ -455,9 +452,8 @@ function App() {
 
           {isMobileMenuOpen && (
             <div className="lg:hidden py-4 space-y-3">
-              <a href="#apps" className="block text-gray-700 hover:text-teal-600 transition-colors">Ứng dụng</a>
-              <a href="#about" className="block text-gray-700 hover:text-teal-600 transition-colors">Giới thiệu</a>
-              <a href="#contact" className="block px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors font-medium text-center">
+              <a href="#apps" className="block text-gray-700 hover:text-blue-700 transition-colors font-medium">Ứng dụng</a>
+              <a href="#contact" className="block px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition-colors font-medium text-center">
                 Liên hệ
               </a>
             </div>
@@ -465,51 +461,37 @@ function App() {
         </nav>
       </header>
 
-      <section className="relative overflow-hidden bg-gradient-to-br from-teal-600 via-teal-700 to-teal-800 text-white py-20 lg:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-br from-blue-900 via-indigo-900 to-slate-950 text-white py-20 lg:py-32">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
-        <div className="absolute top-0 right-0 w-96 h-96 bg-teal-500/30 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-500/30 rounded-full blur-3xl"></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
-              <Sparkles className="w-4 h-4" />
-              <span className="text-sm font-semibold">AI-Powered Education Tools</span>
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-white/10">
+              <Sparkles className="w-4 h-4 text-blue-300" />
+              <span className="text-sm font-semibold">AI-Powered Education Platform</span>
             </div>
 
-            <h1 className="text-4xl lg:text-6xl font-extrabold mb-6 leading-tight">
-              XÂY DỰNG CỘNG ĐỒNG<br />
-              <span className="text-teal-200">GIÁO VIÊN ỨNG DỤNG AI</span><br />
+            <h1 className="text-4xl lg:text-6xl font-extrabold mb-6 leading-tight tracking-tight">
+              CỘNG ĐỒNG GIÁO VIÊN<br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-200 font-black">ỨNG DỤNG AI TOÀN NĂNG</span><br />
               VÀO GIẢNG DẠY
             </h1>
 
-            <p className="text-xl text-teal-100 mb-8 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-blue-100 mb-10 max-w-3xl mx-auto leading-relaxed">
               Bộ công cụ AI toàn diện giúp giáo viên tiết kiệm thời gian, nâng cao chất lượng giảng dạy
-              và tập trung vào những gì quan trọng nhất - học sinh.
+              và tối ưu hóa hiệu quả sư phạm.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex justify-center items-center">
               <a
                 href="#apps"
-                className="px-8 py-4 bg-white text-teal-600 rounded-xl font-bold hover:bg-gray-50 transition-all shadow-lg hover:scale-105"
+                className="px-10 py-5 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-2xl font-bold text-lg hover:from-blue-600 hover:to-indigo-700 transition-all shadow-xl hover:shadow-2xl hover:scale-105 flex items-center gap-2"
               >
-                Khám phá công cụ
+                Khám phá công cụ ngay
+                <Sparkles className="w-5 h-5 text-yellow-300 animate-pulse" />
               </a>
-
-              <button
-                onClick={() => setShowZaloModal(true)}
-                className="px-8 py-4 bg-blue-600/90 backdrop-blur-sm text-white rounded-xl font-bold hover:bg-blue-600 transition-all shadow-lg hover:scale-105 flex items-center gap-2"
-              >
-                <Users className="w-5 h-5" />
-                Group Zalo
-              </button>
-              <button
-                onClick={() => setShowGuideModal(true)}
-                className="px-8 py-4 bg-amber-500/90 backdrop-blur-sm text-white rounded-xl font-bold hover:bg-amber-600 transition-all shadow-lg hover:scale-105 flex items-center gap-2"
-              >
-                <BookOpen className="w-5 h-5" />
-                Hướng dẫn sử dụng
-              </button>
             </div>
 
 
@@ -517,19 +499,19 @@ function App() {
             <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                 <div className="text-3xl font-bold mb-2">1200+</div>
-                <div className="text-teal-100">Giáo viên tin dùng</div>
+                <div className="text-blue-100">Giáo viên tin dùng</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                 <div className="text-3xl font-bold mb-2">30+</div>
-                <div className="text-teal-100">Công cụ AI</div>
+                <div className="text-blue-100">Công cụ AI</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                 <div className="text-3xl font-bold mb-2">90%</div>
-                <div className="text-teal-100">Tiết kiệm thời gian</div>
+                <div className="text-blue-100">Tiết kiệm thời gian</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                 <div className="text-3xl font-bold mb-2">{visitCount.toLocaleString()}+</div>
-                <div className="text-teal-100">Lượt truy cập</div>
+                <div className="text-blue-100">Lượt truy cập</div>
               </div>
             </div>
           </div>
@@ -553,7 +535,7 @@ function App() {
                 key={category}
                 onClick={() => setSelectedCategory(category)}
                 className={`px-6 py-2 rounded-full font-medium transition-all ${selectedCategory === category
-                  ? 'bg-teal-600 text-white shadow-lg'
+                  ? 'bg-blue-700 text-white shadow-lg'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                   }`}
               >
@@ -575,7 +557,7 @@ function App() {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                   {app.badge && (
-                    <div className="absolute top-4 right-4 bg-teal-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+                    <div className="absolute top-4 right-4 bg-blue-700 text-white text-xs font-bold px-3 py-1 rounded-full">
                       {app.badge}
                     </div>
                   )}
@@ -586,7 +568,7 @@ function App() {
                         target={app.id === 'viet-skkn' ? '_self' : '_blank'}
                         rel="noopener noreferrer"
                         onClick={(e) => handleAppClick(app, e)}
-                        className="inline-flex items-center gap-2 bg-white text-teal-600 px-4 py-2 rounded-lg font-semibold hover:bg-gray-50 transition-colors"
+                        className="inline-flex items-center gap-2 bg-white text-blue-700 px-4 py-2 rounded-lg font-semibold hover:bg-gray-50 transition-colors"
                       >
                         {app.id === 'viet-skkn' ? 'Xem chi tiết' : 'Truy cập ngay'}
                         <ExternalLink className="w-4 h-4" />
@@ -597,12 +579,12 @@ function App() {
 
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-semibold text-teal-600 bg-teal-50 px-3 py-1 rounded-full">
+                    <span className="text-xs font-semibold text-blue-700 bg-blue-50 px-3 py-1 rounded-full">
                       {app.category}
                     </span>
                   </div>
 
-                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-teal-600 transition-colors">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-700 transition-colors">
                     {app.title}
                   </h3>
 
@@ -616,77 +598,22 @@ function App() {
         </div>
       </section>
 
-      <section id="about" className="py-16 lg:py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                Về tác giả
-              </h2>
-              <div className="space-y-4 text-gray-700 leading-relaxed">
-                <p className="text-lg">
-                  Tôi là <strong>Trần Hoài Thanh</strong>, giáo viên Toán tại THPT với niềm đam mê
-                  ứng dụng công nghệ AI vào giảng dạy.
-                </p>
-                <p>
-                  Với sứ mệnh <strong>"Xây dựng cộng đồng giáo viên ứng dụng AI vào giảng dạy"</strong>,
-                  tôi đã phát triển các công cụ giúp giáo viên tiết kiệm thời gian soạn giáo án, tạo đề thi,
-                  và nâng cao chất lượng dạy học.
-                </p>
-                <p>
-                  Tất cả các công cụ được thiết kế dựa trên nhu cầu thực tế của giáo viên Việt Nam,
-                  tuân thủ chuẩn Bộ GD&ĐT và dễ sử dụng ngay cả với người không rành công nghệ.
-                </p>
-              </div>
 
-              <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                <a
-                  href="https://www.facebook.com/tranhoaithanhvicko"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-teal-600 text-white rounded-xl font-semibold hover:bg-teal-700 transition-colors"
-                >
-                  Facebook
-                  <ExternalLink className="w-4 h-4" />
-                </a>
-                <a
-                  href="tel:0348296773"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-green-600 text-white rounded-xl font-semibold hover:bg-green-700 transition-colors"
-                >
-                  Zalo: 0348296773
-                </a>
-              </div>
-            </div>
-
-            <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <img
-                  src="/gemini_generated_image_os5rg2os5rg2os5r.png"
-                  alt="Trần Hoài Thanh"
-                  className="w-full"
-                />
-              </div>
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-cyan-500/20 rounded-full blur-3xl"></div>
-              <div className="absolute -top-6 -left-6 w-32 h-32 bg-teal-500/20 rounded-full blur-3xl"></div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section id="contact" className="py-16 lg:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-teal-600 to-teal-800 rounded-3xl p-8 lg:p-12 text-center text-white relative overflow-hidden">
+          <div className="bg-gradient-to-br from-blue-800 to-indigo-900 rounded-3xl p-8 lg:p-12 text-center text-white relative overflow-hidden">
             <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
             <div className="relative z-10">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4">
                 Sẵn sàng nâng tầm giảng dạy?
               </h2>
-              <p className="text-xl text-teal-100 mb-8 max-w-2xl mx-auto">
+              <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
                 Tham gia cùng hơn 1,200 giáo viên đang sử dụng các công cụ AI để cải thiện chất lượng giảng dạy
               </p>
               <a
                 href="#apps"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-white text-teal-600 rounded-xl font-bold hover:bg-gray-50 transition-all shadow-lg hover:scale-105"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-white text-blue-700 rounded-xl font-bold hover:bg-gray-50 transition-all shadow-lg hover:scale-105"
               >
                 Khám phá ngay
                 <ExternalLink className="w-5 h-5" />
@@ -701,12 +628,12 @@ function App() {
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-full bg-teal-600 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full bg-blue-700 flex items-center justify-center">
                   <School className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-bold">Trần Hoài Thanh</h3>
-                  <p className="text-sm text-gray-400">AI for Education</p>
+                  <h3 className="font-bold">Đinh Văn Thành</h3>
+                  <p className="text-sm text-gray-400 font-semibold">AI-GV Toàn Năng</p>
                 </div>
               </div>
               <p className="text-gray-400 text-sm">
@@ -718,7 +645,6 @@ function App() {
               <h4 className="font-bold mb-4">Liên kết</h4>
               <div className="space-y-2 text-sm">
                 <a href="#apps" className="block text-gray-400 hover:text-white transition-colors">Ứng dụng</a>
-                <a href="#about" className="block text-gray-400 hover:text-white transition-colors">Giới thiệu</a>
                 <a href="#contact" className="block text-gray-400 hover:text-white transition-colors">Liên hệ</a>
               </div>
             </div>
@@ -726,21 +652,21 @@ function App() {
             <div>
               <h4 className="font-bold mb-4">Liên hệ</h4>
               <div className="space-y-2 text-sm text-gray-400">
-                <p>Zalo: 0348296773</p>
+                <p>Zalo/Tel: 0915.213717</p>
                 <a
-                  href="https://www.facebook.com/tranhoaithanhvicko"
+                  href="https://zalo.me/0915213717"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block hover:text-white transition-colors"
+                  className="block hover:text-white transition-colors text-blue-400 font-semibold"
                 >
-                  Facebook: tranhoaithanhvicko
+                  Nhắn tin Zalo ngay
                 </a>
               </div>
             </div>
           </div>
 
           <div className="mt-12 pt-8 border-t border-gray-800 text-center text-sm text-gray-400">
-            <p>© 2024 Trần Hoài Thanh. All rights reserved.</p>
+            <p>© 2024-2026 Đinh Văn Thành. All rights reserved.</p>
           </div>
         </div>
       </footer>
@@ -748,7 +674,7 @@ function App() {
       {/* Course Modal removed */}
       {false && (
         <div className="fixed inset-0 z-[100] flex items-start justify-center overflow-y-auto bg-black/60 backdrop-blur-sm p-4">
-          <div className="relative w-full max-w-4xl my-8 bg-gradient-to-b from-teal-50 to-white rounded-2xl shadow-2xl">
+          <div className="relative w-full max-w-4xl my-8 bg-gradient-to-b from-blue-50 to-white rounded-2xl shadow-2xl">
             <button
               onClick={() => setShowCourseModal(false)}
               className="absolute top-4 right-4 z-10 p-2 rounded-full bg-white hover:bg-gray-100 transition-colors shadow-md"
@@ -758,14 +684,14 @@ function App() {
 
             <div className="p-6 md:p-10">
               <div className="text-center mb-8">
-                <div className="inline-flex items-center gap-2 bg-teal-100 px-4 py-2 rounded-full text-sm font-bold text-teal-600 mb-6">
+                <div className="inline-flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-full text-sm font-bold text-blue-700 mb-6">
                   <Sparkles className="w-4 h-4" />
                   <span className="tracking-wide">Đào Tạo Chuyên Sâu</span>
                 </div>
                 <h2 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
                   <span className="text-gray-900 tracking-tight">Khóa Học Thực Chiến</span>
                   <br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 via-teal-600 to-cyan-600 tracking-tight">Viết SKKN & Tạo App Dạy Học</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-indigo-600 to-blue-700 tracking-tight">Viết SKKN & Tạo App Dạy Học</span>
                 </h2>
                 <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
                   Khóa học giúp thầy cô thành thạo công nghệ AI, tạo ứng dụng giáo dục và hoàn thành SKKN chất lượng cao
@@ -773,10 +699,10 @@ function App() {
               </div>
 
               <div className="grid md:grid-cols-2 gap-6 mb-8">
-                <div className="bg-white rounded-2xl p-6 shadow-md border-2 border-teal-100 hover:border-teal-300 transition-colors">
+                <div className="bg-white rounded-2xl p-6 shadow-md border-2 border-blue-100 hover:border-blue-300 transition-colors">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center flex-shrink-0">
-                      <Sparkles className="w-6 h-6 text-teal-600" />
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center flex-shrink-0">
+                      <Sparkles className="w-6 h-6 text-blue-700" />
                     </div>
                     <div>
                       <h3 className="font-bold text-lg mb-2 text-gray-900">Hoàn thành SKKN chất lượng chỉ với 1 câu lệnh</h3>
@@ -787,10 +713,10 @@ function App() {
                   </div>
                 </div>
 
-                <div className="bg-white rounded-2xl p-6 shadow-md border-2 border-teal-100 hover:border-teal-300 transition-colors">
+                <div className="bg-white rounded-2xl p-6 shadow-md border-2 border-blue-100 hover:border-blue-300 transition-colors">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center flex-shrink-0">
-                      <ExternalLink className="w-6 h-6 text-teal-600" />
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center flex-shrink-0">
+                      <ExternalLink className="w-6 h-6 text-blue-700" />
                     </div>
                     <div>
                       <h3 className="font-bold text-lg mb-2 text-gray-900">Tạo truyện tranh (Comics), video giáo dục minh họa bài giảng chỉ bằng 1 câu lệnh</h3>
@@ -801,10 +727,10 @@ function App() {
                   </div>
                 </div>
 
-                <div className="bg-white rounded-2xl p-6 shadow-md border-2 border-teal-100 hover:border-teal-300 transition-colors">
+                <div className="bg-white rounded-2xl p-6 shadow-md border-2 border-blue-100 hover:border-blue-300 transition-colors">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center flex-shrink-0">
-                      <School className="w-6 h-6 text-teal-600" />
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center flex-shrink-0">
+                      <School className="w-6 h-6 text-blue-700" />
                     </div>
                     <div>
                       <h3 className="font-bold text-lg mb-2 text-gray-900">Chủ động Tạo ra Ứng dụng vô hạn</h3>
@@ -815,10 +741,10 @@ function App() {
                   </div>
                 </div>
 
-                <div className="bg-white rounded-2xl p-6 shadow-md border-2 border-teal-100 hover:border-teal-300 transition-colors">
+                <div className="bg-white rounded-2xl p-6 shadow-md border-2 border-blue-100 hover:border-blue-300 transition-colors">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center flex-shrink-0">
-                      <Sparkles className="w-6 h-6 text-teal-600" />
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center flex-shrink-0">
+                      <Sparkles className="w-6 h-6 text-blue-700" />
                     </div>
                     <div>
                       <h3 className="font-bold text-lg mb-2 text-gray-900">Định vị là CHUYÊN GIA 4.0</h3>
@@ -835,7 +761,7 @@ function App() {
                   href="https://forms.gle/293TKbdAaBhqDHhHA"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-teal-500 via-teal-600 to-cyan-600 text-white rounded-2xl font-bold text-lg hover:from-teal-600 hover:via-cyan-600 hover:to-teal-700 transition-all shadow-xl hover:shadow-2xl hover:scale-105 tracking-wide"
+                  className="inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-blue-500 via-indigo-600 to-blue-700 text-white rounded-2xl font-bold text-lg hover:from-blue-600 hover:via-indigo-600 hover:to-blue-800 transition-all shadow-xl hover:shadow-2xl hover:scale-105 tracking-wide"
                 >
                   Tham gia ngay cùng cộng đồng giáo viên toàn năng
                   <ExternalLink className="w-6 h-6" />
@@ -858,19 +784,19 @@ function App() {
 
             <div className="p-6 md:p-8">
               <div className="mb-6">
-                <div className="inline-flex items-center gap-2 bg-teal-50 px-3 py-1 rounded-full text-xs font-semibold text-teal-600 mb-4">
+                <div className="inline-flex items-center gap-2 bg-blue-50 px-3 py-1 rounded-full text-xs font-semibold text-blue-700 mb-4">
                   <Sparkles className="w-3 h-3" />
                   <span>Công nghệ AI mới nhất</span>
                 </div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-2">
-                  Viết SKKN Siêu Tốc <span className="text-teal-600">với Trợ Lý AI</span>
+                  Viết SKKN Siêu Tốc <span className="text-blue-700">với Trợ Lý AI</span>
                 </h2>
                 <p className="text-gray-600">
                   Công cụ hỗ trợ giáo viên hoàn thành Sáng kiến kinh nghiệm nhanh chóng, chuẩn mẫu Bộ GD&ĐT chỉ trong vài bước đơn giản.
                 </p>
               </div>
 
-              <div className="bg-gradient-to-b from-teal-50 to-white rounded-xl p-6 mb-6 border border-teal-100">
+              <div className="bg-gradient-to-b from-blue-50 to-white rounded-xl p-6 mb-6 border border-blue-100">
                 <img
                   src="/image.png"
                   alt="SKKN Pro Interface"
@@ -881,8 +807,8 @@ function App() {
               <div className="space-y-4 mb-6">
                 <h3 className="text-lg font-bold text-gray-900">Tính năng nổi bật</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  <div className="p-4 bg-teal-50 rounded-xl">
-                    <div className="w-10 h-10 rounded-lg bg-teal-100 flex items-center justify-center text-teal-600 mb-3">
+                  <div className="p-4 bg-blue-50 rounded-xl">
+                    <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center text-blue-700 mb-3">
                       <Sparkles className="w-5 h-5" />
                     </div>
                     <h4 className="font-bold text-sm mb-1">Gợi ý đề tài thông minh</h4>
@@ -905,7 +831,7 @@ function App() {
                 </div>
               </div>
 
-              <div className="bg-teal-50 rounded-xl p-4 mb-6">
+              <div className="bg-blue-50 rounded-xl p-4 mb-6">
                 <div className="flex items-start gap-3">
                   <div className="w-10 h-10 rounded-full bg-white flex-shrink-0"></div>
                   <div>
@@ -921,19 +847,19 @@ function App() {
               <div className="border-t border-gray-200 pt-6">
                 <div className="text-center mb-4">
                   <p className="text-sm text-gray-600 mb-2">Liên hệ đăng ký:</p>
-                  <a href="tel:0348296773" className="text-teal-600 text-lg font-bold hover:underline">
-                    Zalo: 0348296773
+                  <a href="tel:0915213717" className="text-blue-700 text-lg font-bold hover:underline">
+                    Zalo/Tel: 0915.213717
                   </a>
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a
-                    href="https://www.facebook.com/tranhoaithanhvicko"
+                    href="https://zalo.me/0915213717"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3 bg-teal-600 text-white rounded-xl font-semibold hover:bg-teal-700 transition-colors"
+                    className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3 bg-blue-700 text-white rounded-xl font-semibold hover:bg-blue-800 transition-colors"
                   >
-                    Liên hệ Facebook
+                    Liên hệ Zalo ngay
                     <ExternalLink className="w-4 h-4" />
                   </a>
                   <button
@@ -948,211 +874,12 @@ function App() {
           </div>
         </div>
       )}
-      {showZaloModal && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4">
-          <div className="relative w-full max-w-lg bg-white rounded-2xl shadow-2xl p-6 md:p-8 animate-in fade-in zoom-in duration-200">
-            <button
-              onClick={() => setShowZaloModal(false)}
-              className="absolute top-4 right-4 z-10 p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
-            >
-              <X className="w-5 h-5" />
-            </button>
 
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-8 h-8 text-blue-600" />
-              </div>
-
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                CỘNG ĐỒNG GIÁO VIÊN<br />
-                <span className="text-blue-600">ỨNG DỤNG AI - GROUP 3</span>
-              </h3>
-
-              <a
-                href="https://zalo.me/g/urhxrf976"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 font-medium hover:underline mb-4 block"
-              >
-                https://zalo.me/g/urhxrf976
-              </a>
-
-              <div className="bg-blue-50 rounded-xl p-4 mb-6 text-left">
-                <p className="text-gray-700 leading-relaxed text-center mb-4">
-                  Cập nhật các thông tin và app mới nhất phục vụ việc dạy và học dành cho GV, trao đổi ứng dụng AI dành cho GV.
-                </p>
-                <div className="flex justify-center">
-                  <div className="p-2 bg-white rounded-xl shadow-sm">
-                    <img
-                      src="/zalo-qr.png"
-                      alt="QR Code Zalo Group"
-                      className="w-48 h-48 object-contain"
-                    />
-                  </div>
-                </div>
-                <p className="text-xs text-gray-500 text-center mt-2">
-                  Quét mã QR để tham gia nhóm
-                </p>
-              </div>
-
-              <div className="flex flex-col gap-3">
-                <a
-                  href="https://zalo.me/g/urhxrf976"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition-colors shadow-lg shadow-blue-200"
-                >
-                  <Users className="w-5 h-5" />
-                  Tham gia nhóm Zalo ngay
-                </a>
-                <button
-                  onClick={() => setShowZaloModal(false)}
-                  className="w-full px-6 py-3 bg-gray-100 text-gray-700 rounded-xl font-bold hover:bg-gray-200 transition-colors"
-                >
-                  Đóng
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-      {showGuideModal && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4">
-          <div className="relative w-full max-w-lg bg-white rounded-2xl shadow-2xl p-6 md:p-8 animate-in fade-in zoom-in duration-200">
-            <button
-              onClick={() => setShowGuideModal(false)}
-              className="absolute top-4 right-4 z-10 p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
-            >
-              <X className="w-5 h-5" />
-            </button>
-
-            <div className="text-left max-h-[80vh] overflow-y-auto">
-              <div className="text-center mb-6">
-                <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <BookOpen className="w-8 h-8 text-amber-600" />
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                  HƯỚNG DẪN SỬ DỤNG<br />
-                  <span className="text-amber-600">VÀ MỘT SỐ APP KHÁC</span>
-                </h3>
-              </div>
-
-              {/* Phần 1: Video hướng dẫn */}
-              <div className="mb-6">
-                <h4 className="text-lg font-bold text-gray-800 mb-3 flex items-center gap-2">
-                  <span className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center text-red-600 text-sm font-bold">1</span>
-                  Video hướng dẫn sử dụng
-                </h4>
-                <div className="bg-red-50 rounded-xl p-4 space-y-3">
-                  <a
-                    href="https://youtu.be/oNYIzQA0h7Y"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 p-3 bg-white rounded-lg hover:bg-gray-50 transition-colors shadow-sm hover:shadow group"
-                  >
-                    <div className="w-10 h-10 rounded-lg bg-red-100 flex items-center justify-center flex-shrink-0">
-                      <svg className="w-5 h-5 text-red-600" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-900 group-hover:text-red-600 transition-colors">HỖ TRỢ LẤY API KEY</p>
-                      <p className="text-xs text-gray-500">Hướng dẫn lấy API Key để sử dụng các app AI</p>
-                    </div>
-                  </a>
-
-                  <a
-                    href="https://youtu.be/BQgneNmJxSM"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 p-3 bg-white rounded-lg hover:bg-gray-50 transition-colors shadow-sm hover:shadow group"
-                  >
-                    <div className="w-10 h-10 rounded-lg bg-red-100 flex items-center justify-center flex-shrink-0">
-                      <svg className="w-5 h-5 text-red-600" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-900 group-hover:text-red-600 transition-colors">HƯỚNG DẪN SD APP SKKN</p>
-                      <p className="text-xs text-gray-500">Video hướng dẫn sử dụng App viết SKKN</p>
-                    </div>
-                  </a>
-
-                  <a
-                    href="https://youtu.be/gO4y-aGvQRA"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 p-3 bg-white rounded-lg hover:bg-gray-50 transition-colors shadow-sm hover:shadow group"
-                  >
-                    <div className="w-10 h-10 rounded-lg bg-red-100 flex items-center justify-center flex-shrink-0">
-                      <svg className="w-5 h-5 text-red-600" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-900 group-hover:text-red-600 transition-colors">HƯỚNG DẪN SỬ DỤNG CÁC APP TRONG WEB</p>
-                      <p className="text-xs text-gray-500">Hướng dẫn chi tiết các công cụ trên GiaoVienAI</p>
-                    </div>
-                  </a>
-
-                  <a
-                    href="https://youtu.be/F7jXwBXn6oY"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 p-3 bg-white rounded-lg hover:bg-gray-50 transition-colors shadow-sm hover:shadow group"
-                  >
-                    <div className="w-10 h-10 rounded-lg bg-red-100 flex items-center justify-center flex-shrink-0">
-                      <svg className="w-5 h-5 text-red-600" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-900 group-hover:text-red-600 transition-colors">HƯỚNG DẪN SỬ DỤNG PHẦN MỀM EXAMGEN PRO</p>
-                      <p className="text-xs text-gray-500">Video hướng dẫn sử dụng phần mềm tạo đề thi</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              {/* Phần 2: App chia sẻ mã nguồn */}
-              <div className="mb-6">
-                <h4 className="text-lg font-bold text-gray-800 mb-3 flex items-center gap-2">
-                  <span className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center text-purple-600 text-sm font-bold">2</span>
-                  App chia sẻ mã nguồn và code
-                </h4>
-                <div className="bg-purple-50 rounded-xl p-4 space-y-3">
-                  <a
-                    href="https://ai.studio/apps/drive/1gTFTdqmlzPzOkM8nGebWuRYOaBItS0pE"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 p-3 bg-white rounded-lg hover:bg-gray-50 transition-colors shadow-sm hover:shadow group"
-                  >
-                    <div className="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center flex-shrink-0">
-                      <Sparkles className="w-5 h-5 text-purple-600" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors">APP PHỤC CHẾ ẢNH CŨ</p>
-                      <p className="text-xs text-gray-500">Ứng dụng AI phục hồi ảnh cũ, ảnh mờ - Mã nguồn mở</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <button
-                onClick={() => setShowGuideModal(false)}
-                className="w-full px-6 py-3 bg-gray-100 text-gray-700 rounded-xl font-bold hover:bg-gray-200 transition-colors"
-              >
-                Đóng
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
 
       {/* Bảng giá Modal removed */}
       {false && (
         <div className="fixed inset-0 z-[100] flex items-start justify-center bg-black/60 backdrop-blur-sm p-4 pt-8 overflow-y-auto">
-          <div className="relative w-full max-w-3xl mb-8 bg-white rounded-3xl shadow-2xl p-6 md:p-8 animate-in fade-in zoom-in duration-300 border-4 border-teal-100">
+          <div className="relative w-full max-w-3xl mb-8 bg-white rounded-3xl shadow-2xl p-6 md:p-8 animate-in fade-in zoom-in duration-300 border-4 border-blue-100">
             <button
               onClick={() => setShowPromoModal(false)}
               className="absolute top-4 right-4 z-10 p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
@@ -1161,8 +888,8 @@ function App() {
             </button>
 
             <div className="text-center mb-6">
-              <div className="inline-block p-4 rounded-full bg-teal-100 mb-4">
-                <Star className="w-10 h-10 text-teal-600" />
+              <div className="inline-block p-4 rounded-full bg-blue-100 mb-4">
+                <Star className="w-10 h-10 text-blue-700" />
               </div>
               <h3 className="text-2xl md:text-3xl font-extrabold text-gray-900 leading-tight">
                 💎 BẢNG GIÁ CÁC ỨNG DỤNG AI 💎
@@ -1174,66 +901,66 @@ function App() {
               <div className="overflow-x-auto rounded-2xl border border-gray-200 shadow-sm">
                 <table className="w-full text-sm md:text-base">
                   <thead>
-                    <tr className="bg-gradient-to-r from-teal-600 to-teal-700 text-white">
+                    <tr className="bg-gradient-to-r from-blue-700 to-blue-800 text-white">
                       <th className="px-3 py-3 text-center font-bold w-12">STT</th>
                       <th className="px-3 py-3 text-left font-bold">Tên app</th>
                       <th className="px-3 py-3 text-right font-bold w-28">Phí sử dụng</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b border-gray-100 hover:bg-teal-50/50 transition-colors">
+                    <tr className="border-b border-gray-100 hover:bg-blue-50/50 transition-colors">
                       <td className="px-3 py-2.5 text-center font-medium">1</td>
                       <td className="px-3 py-2.5">Tạo đề thi vào 10, tốt nghiệp THPT, CV 7991, tạo đề tương tự, sinh đề biến thể</td>
                       <td className="px-3 py-2.5 text-right font-semibold text-gray-800">199.000đ</td>
                     </tr>
-                    <tr className="border-b border-gray-100 bg-gray-50/50 hover:bg-teal-50/50 transition-colors">
+                    <tr className="border-b border-gray-100 bg-gray-50/50 hover:bg-blue-50/50 transition-colors">
                       <td className="px-3 py-2.5 text-center font-medium">2</td>
                       <td className="px-3 py-2.5">Viết biện pháp GVG-GVCNG</td>
                       <td className="px-3 py-2.5 text-right font-semibold text-gray-800">199.000đ</td>
                     </tr>
-                    <tr className="border-b border-gray-100 hover:bg-teal-50/50 transition-colors">
+                    <tr className="border-b border-gray-100 hover:bg-blue-50/50 transition-colors">
                       <td className="px-3 py-2.5 text-center font-medium">3</td>
                       <td className="px-3 py-2.5">Xưởng sản xuất video giáo dục</td>
                       <td className="px-3 py-2.5 text-right font-semibold text-gray-800">199.000đ</td>
                     </tr>
-                    <tr className="border-b border-gray-100 bg-gray-50/50 hover:bg-teal-50/50 transition-colors">
+                    <tr className="border-b border-gray-100 bg-gray-50/50 hover:bg-blue-50/50 transition-colors">
                       <td className="px-3 py-2.5 text-center font-medium">4</td>
                       <td className="px-3 py-2.5">Tạo giáo án 5512, NCBH, STEM</td>
                       <td className="px-3 py-2.5 text-right font-semibold text-gray-800">199.000đ</td>
                     </tr>
-                    <tr className="border-b border-gray-100 hover:bg-teal-50/50 transition-colors">
+                    <tr className="border-b border-gray-100 hover:bg-blue-50/50 transition-colors">
                       <td className="px-3 py-2.5 text-center font-medium">5</td>
                       <td className="px-3 py-2.5">Bộ 15 game tương tác</td>
                       <td className="px-3 py-2.5 text-right font-semibold text-gray-800">199.000đ</td>
                     </tr>
-                    <tr className="border-b border-gray-100 bg-gray-50/50 hover:bg-teal-50/50 transition-colors">
+                    <tr className="border-b border-gray-100 bg-gray-50/50 hover:bg-blue-50/50 transition-colors">
                       <td className="px-3 py-2.5 text-center font-medium">6</td>
                       <td className="px-3 py-2.5">Kế hoạch bài giảng Pro thi GVG, dự giờ chuyên môn</td>
                       <td className="px-3 py-2.5 text-right font-semibold text-gray-800">199.000đ</td>
                     </tr>
-                    <tr className="border-b border-gray-100 hover:bg-teal-50/50 transition-colors">
+                    <tr className="border-b border-gray-100 hover:bg-blue-50/50 transition-colors">
                       <td className="px-3 py-2.5 text-center font-medium">7</td>
                       <td className="px-3 py-2.5">Trợ lý kiểm tra đạo văn và kiểm tra AI, thẩm định sáng kiến kinh nghiệm</td>
                       <td className="px-3 py-2.5 text-right font-semibold text-gray-800">199.000đ</td>
                     </tr>
-                    <tr className="border-b border-gray-100 bg-gray-50/50 hover:bg-teal-50/50 transition-colors">
+                    <tr className="border-b border-gray-100 bg-gray-50/50 hover:bg-blue-50/50 transition-colors">
                       <td className="px-3 py-2.5 text-center font-medium">8</td>
                       <td className="px-3 py-2.5">Sáng kiến kinh nghiệm 2025 & 2026 Pro</td>
                       <td className="px-3 py-2.5 text-right font-semibold text-gray-800">199.000đ</td>
                     </tr>
-                    <tr className="border-b border-gray-100 hover:bg-teal-50/50 transition-colors">
+                    <tr className="border-b border-gray-100 hover:bg-blue-50/50 transition-colors">
                       <td className="px-3 py-2.5 text-center font-medium">9</td>
                       <td className="px-3 py-2.5">Chatbot cá nhân hóa</td>
                       <td className="px-3 py-2.5 text-right font-semibold text-gray-800">199.000đ</td>
                     </tr>
-                    <tr className="border-b border-gray-200 bg-gray-50/50 hover:bg-teal-50/50 transition-colors">
+                    <tr className="border-b border-gray-200 bg-gray-50/50 hover:bg-blue-50/50 transition-colors">
                       <td className="px-3 py-2.5 text-center font-medium">10</td>
                       <td className="px-3 py-2.5">Khóa học tạo app giáo dục: Một phát ăn ngay</td>
                       <td className="px-3 py-2.5 text-right font-semibold text-gray-800">499.000đ</td>
                     </tr>
-                    <tr className="bg-teal-50 border-b-2 border-teal-200">
-                      <td className="px-3 py-3 text-center font-bold text-teal-700" colSpan={2}>Tổng</td>
-                      <td className="px-3 py-3 text-right font-extrabold text-teal-700 text-lg">2.290.000đ</td>
+                    <tr className="bg-blue-50 border-b-2 border-blue-200">
+                      <td className="px-3 py-3 text-center font-bold text-blue-700" colSpan={2}>Tổng</td>
+                      <td className="px-3 py-3 text-right font-extrabold text-blue-700 text-lg">2.290.000đ</td>
                     </tr>
                   </tbody>
                 </table>
@@ -1251,7 +978,7 @@ function App() {
                       </h4>
                       <p className="text-amber-700 font-medium mb-1">SỬ DỤNG FULL CÁC APP HIỆN TẠI VÀ SAU NÀY (viết chuyên đề, thần số học toàn diện, ngoại khóa...) ĐỀU MIỄN PHÍ</p>
                       <p className="text-sm text-amber-600">Quét mã QR thanh toán và chụp bill gửi về</p>
-                      <p className="text-sm text-amber-600 font-semibold">Số Zalo: 0348296773</p>
+                      <p className="text-sm text-amber-600 font-semibold">Số Zalo: 0915.213717</p>
                     </div>
                     <div className="text-center">
                       <div className="text-3xl md:text-4xl font-black text-red-600 bg-white px-6 py-3 rounded-2xl shadow-md border border-red-100">
@@ -1265,22 +992,20 @@ function App() {
               {/* QR Code thanh toán */}
               <div className="text-center">
                 <h4 className="text-lg font-bold text-gray-800 mb-4 flex items-center justify-center gap-2">
-                  📱 Quét mã QR để thanh toán
+                  📱 Thông tin chuyển khoản thanh toán
                 </h4>
-                <div className="inline-block bg-pink-50 p-4 rounded-2xl shadow-md border border-pink-100">
-                  <p className="font-bold text-gray-800 mb-1">TRẦN HOÀI THANH</p>
-                  <p className="text-sm text-gray-500 mb-3">*******773</p>
-                  <img
-                    src="/qr-thanhtoan.png"
-                    alt="QR thanh toán MoMo - Trần Hoài Thanh"
-                    className="w-64 h-auto mx-auto rounded-xl"
-                  />
+                <div className="inline-block bg-pink-50 p-6 rounded-2xl shadow-md border border-pink-100 max-w-md mx-auto">
+                  <p className="font-bold text-gray-800 mb-2">ĐINH VĂN THÀNH</p>
+                  <p className="text-sm text-gray-600 mb-4">
+                    Vui lòng liên hệ số Zalo bên dưới để nhận thông tin tài khoản chuyển khoản chính thức.
+                  </p>
+                  <p className="text-base font-bold text-pink-600">Tel/Zalo: 0915.213717</p>
                 </div>
               </div>
 
               <div className="flex flex-col gap-3 pt-2">
                 <a
-                  href="https://zalo.me/0348296773"
+                  href="https://zalo.me/0915213717"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 bg-blue-600 text-white rounded-xl font-bold text-lg hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
@@ -1288,7 +1013,7 @@ function App() {
                   <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
                     <span className="text-blue-600 font-bold text-xs">ALO</span>
                   </div>
-                  Liên hệ Zalo: 0348296773
+                  Liên hệ Zalo: 0915.213717
                 </a>
                 <button
                   onClick={() => setShowPromoModal(false)}
@@ -1335,9 +1060,9 @@ function App() {
                 </p>
 
                 {/* Tôn chỉ miễn phí */}
-                <div className="bg-gradient-to-r from-teal-500/20 via-green-500/20 to-teal-500/20 backdrop-blur-sm rounded-2xl p-6 border-2 border-teal-400/40 max-w-4xl mx-auto">
+                <div className="bg-gradient-to-r from-blue-500/20 via-green-500/20 to-blue-500/20 backdrop-blur-sm rounded-2xl p-6 border-2 border-blue-400/40 max-w-4xl mx-auto">
                   <p className="text-xl md:text-2xl text-white leading-relaxed font-medium text-center">
-                    🌟 <span className="text-teal-300 font-bold">Web lập ra với tôn chỉ miễn phí hầu hết đến 90%</span> dành cho thầy cô và sau này cũng vậy,
+                    🌟 <span className="text-blue-300 font-bold">Web lập ra với tôn chỉ miễn phí hầu hết đến 90%</span> dành cho thầy cô và sau này cũng vậy,
                     <span className="text-green-400 font-bold">không thu phí các app đã miễn phí</span>.
                     Tuy nhiên có một số app cần thu phí để <span className="text-yellow-300 font-semibold">duy trì tài khoản AI tạo app</span> và <span className="text-pink-400 font-semibold">ủng hộ tác giả</span> ❤️
                   </p>
@@ -1401,7 +1126,7 @@ function App() {
                     </div>
 
                     <a
-                      href="https://zalo.me/0348296773"
+                      href="https://zalo.me/0915213717"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="mt-auto w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-gray-500 to-gray-600 text-white rounded-xl font-bold hover:from-gray-400 hover:to-gray-500 transition-all shadow-lg"
@@ -1469,7 +1194,7 @@ function App() {
                     </div>
 
                     <a
-                      href="https://zalo.me/0348296773"
+                      href="https://zalo.me/0915213717"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="mt-auto w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 rounded-xl font-bold hover:from-yellow-300 hover:to-orange-400 transition-all shadow-xl shadow-yellow-500/30"
@@ -1535,7 +1260,7 @@ function App() {
                     </div>
 
                     <a
-                      href="https://zalo.me/0348296773"
+                      href="https://zalo.me/0915213717"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="mt-auto w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 via-pink-500 to-purple-600 text-white rounded-xl font-bold hover:from-purple-400 hover:via-pink-400 hover:to-purple-500 transition-all shadow-xl shadow-purple-500/30"
@@ -1551,14 +1276,14 @@ function App() {
               <div className="text-center">
                 <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 mb-6 border border-white/10">
                   <p className="text-xl text-white font-semibold mb-2">
-                    📞 Thầy cô đăng ký gói vui lòng liên hệ số Zalo: <span className="text-yellow-400">0348296773</span>
+                    📞 Thầy cô đăng ký gói vui lòng liên hệ số Zalo: <span className="text-yellow-400">0915.213717</span>
                   </p>
                   <p className="text-gray-300">
                     💡 <span className="text-green-400 font-medium">Sau này nâng cấp gói</span> chỉ cần thêm số tiền chênh lệch giữa các gói
                   </p>
                 </div>
                 <a
-                  href="https://zalo.me/0348296773"
+                  href="https://zalo.me/0915213717"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-2xl font-bold text-lg hover:from-blue-400 hover:to-blue-500 transition-all shadow-xl shadow-blue-500/30 hover:scale-105"
@@ -1622,7 +1347,7 @@ function App() {
                 </div>
 
                 {/* Quà tặng */}
-                <div className="bg-gradient-to-r from-green-500/20 to-teal-500/20 rounded-xl p-5 border border-green-400/30">
+                <div className="bg-gradient-to-r from-green-500/20 to-blue-500/20 rounded-xl p-5 border border-green-400/30">
                   <h3 className="text-xl font-bold text-green-400 mb-4 flex items-center gap-2">
                     <Gift className="w-6 h-6" />
                     🎁 Quà tặng cực xịn:
@@ -1681,13 +1406,13 @@ function App() {
               {/* Contact */}
               <div className="flex flex-col gap-3">
                 <a
-                  href="https://zalo.me/0348296773"
+                  href="https://zalo.me/0915213717"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center gap-3 px-6 py-4 bg-gradient-to-r from-green-500 to-teal-500 text-white rounded-xl font-bold text-lg hover:from-green-400 hover:to-teal-400 transition-all shadow-xl shadow-green-500/30 hover:scale-105"
+                  className="w-full inline-flex items-center justify-center gap-3 px-6 py-4 bg-gradient-to-r from-green-500 to-blue-600 text-white rounded-xl font-bold text-lg hover:from-green-400 hover:to-blue-400 transition-all shadow-xl shadow-green-500/30 hover:scale-105"
                 >
                   <Users className="w-6 h-6" />
-                  Liên hệ Zalo: 0348296773
+                  Liên hệ Zalo: 0915.213717
                 </a>
                 <button
                   onClick={() => setShowGroupModal(false)}
